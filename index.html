@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arulprakash – AI Assistant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <meta name="description" content="A fully responsive, single‑file chat landing page that acts like an AI assistant about Arulprakash." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 min-h-screen flex items-center justify-center p-4 font-sans transition-colors duration-300">
+  
+  <div id="particles-js"></div>
+
+  <main class="w-full max-w-xl card-enter">
+    <section class="bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden flex flex-col h-[90vh] max-h-[700px]">
+      
+      <header class="flex items-center gap-3 px-4 py-3 border-b border-slate-200 dark:border-slate-800 flex-shrink-0">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-indigo-500 grid place-items-center text-white font-bold text-lg">A</div>
+        <div class="flex-1">
+          <h1 class="text-lg font-semibold leading-tight">Arulprakash AI</h1>
+          <p class="text-xs text-slate-500 dark:text-slate-400">Mobile Responsive Assistant</p>
+        </div>
+        
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-purple-500">
+          <svg id="theme-icon-sun" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05A1 1 0 003.636 3.636l-.707.707a1 1 0 101.414 1.414l.707-.707zM3 11a1 1 0 100-2H2a1 1 0 100 2h1zM6.464 14.95l-.707.707a1 1 0 001.414 1.414l.707-.707a1 1 0 00-1.414-1.414z"></path></svg>
+          <svg id="theme-icon-moon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+        </button>
+      </header>
+
+      <div id="chat" class="flex-1 overflow-y-auto p-4 flex flex-col gap-3">
+        <!-- Chat messages will appear here -->
+      </div>
+
+      <div class="border-t border-slate-200 dark:border-slate-800 p-3 flex items-center gap-2 flex-shrink-0">
+        <button id="clear" class="hidden" title="Clear chat">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+          </svg>
+        </button>
+        <input id="input" type="text" class="flex-1 bg-slate-200 dark:bg-slate-800/80 rounded-xl px-4 py-2 text-slate-800 dark:text-slate-100 placeholder:text-slate-500 dark:placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Type your question…" />
+        <button id="send" class="bg-purple-600 hover:bg-purple-500 active:scale-95 transition px-4 py-2 rounded-xl font-medium text-white">Send</button>
+      </div>
+    </section>
+
+    <footer class="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-slate-500 dark:text-slate-400 text-sm">
+      <a class="hover:text-purple-500 transition" href="https://www.linkedin.com/in/arul-prakash-s2004" target="_blank">LinkedIn</a>
+      <a class="hover:text-purple-500 transition" href="https://github.com/Arul2710" target="_blank">GitHub</a>
+      <a class="hover:text-purple-500 transition" href="https://x.com/ArulprakashPra5?t=92DXcVFxD9cLii5_nKt6oA&s=09" target="_blank">X</a>
+      <a class="hover:text-purple-500 transition" href="https://instagram.com/" target="_blank">Instagram</a>
+      <a class="hover:text-purple-500 transition" href="#" id="portfolioLink">Portfolio</a>
+    </footer>
+  </main>
+
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
