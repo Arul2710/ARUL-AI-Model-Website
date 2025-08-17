@@ -54,6 +54,6 @@ AI-Model-Website/
 ## ⚡ How to Run
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/Arul2710/AI-Model-Website.git
+https://arul2710.github.io/ARUL-AI-Model-Website/
 
 
